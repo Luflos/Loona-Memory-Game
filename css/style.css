@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+}
+
+.half-screen {
+  background-color: rgb(43, 233, 18);
+  height: 10vh;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  background-color: purple;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.container {
+  display:flex;
+  flex-wrap: wrap;
+  width: 700px;
+  height: 500px;
+}
+
