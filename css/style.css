@@ -1,10 +1,24 @@
 body {
   background-color: black;
+  background-image: url("https://64.media.tumblr.com/73ca2d2bc1a485286d80bbf83ebe21a9/9d04eef358d053e0-de/s1280x1920/05055e9fe9883df7dda55c9d9ed11d55ea2c869c.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .half-screen {
   background-color: rgb(43, 233, 18);
   height: 10vh;
+}
+
+.container-h2{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flex-right {
+  align-self: flex-end;
 }
 
 .flex-center {
@@ -21,9 +35,8 @@ body {
 }
 
 .container {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   width: 700px;
   height: 500px;
 }
-

@@ -10,7 +10,7 @@ You might be asking yourself, what is LOONA? LOONA is you, it's me but it's espe
 * Possibly using bootstrap to style page
 
 ### Rough Sketch
-![Sketch](/images/MemoryGameSketch.jpg.jpg)
+![Sketch](./images/MemoryGameSketch.jpg)
 Beautiful right? Please excuse my drawing...
 
 
