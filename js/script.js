@@ -3,33 +3,32 @@ const gameSpace = document.querySelector(".container")
 const displayGuesses = document.querySelector("#guess")
 
 // Create an array for all member's images 12 members and then repeat for 24 images
-// const getImages = () => [
-//   { imgsrc: './images/Loona-Heejin.jpg', name: 'Loona Heejin'}
-//   { imgsrc: './images/Loona-Hyunjin.jpg', name: 'Loona Hyunjin'}
-//   { imgsrc: './images/Loona-Haseul.jpg', name: 'Loona Haseul'}
-//   { imgsrc: './images/Loona-Yeojin.jpg', name: 'Loona Yeojin'}
-//   { imgsrc: './images/Loona-Vivi.jpg', name: 'Loona Vivi'}
-//   { imgsrc: './images/Loona-KimLip.jpg', name: 'Loona KimLip'}
-//   { imgsrc: './images/Loona-JinSoul.jpg', name: 'Loona JinSoul'}
-//   { imgsrc: './images/Loona-Choerry.jpg', name: 'Loona Choerryn'}
-//   { imgsrc: './images/Loona-Yves.jpg', name: 'Loona Yves'}
-//   { imgsrc: './images/Loona-Chuu.jpg', name: 'Loona Chuu'}
-//   { imgsrc: './images/Loona-GoWon.jpg', name: 'Loona GoWon'}
-//   { imgsrc: './images/Loona-OliviaHye.jpg', name: 'Loona OliviaHye'}
-//   { imgsrc: './images/Loona-Heejin.jpg', name: 'Loona Heejin'}
-//   { imgsrc: './images/Loona-Hyunjin.jpg', name: 'Loona Hyunjin'}
-//   { imgsrc: './images/Loona-Haseul.jpg', name: 'Loona Haseul'}
-//   { imgsrc: './images/Loona-Yeojin.jpg', name: 'Loona Yeojin'}
-//   { imgsrc: './images/Loona-Vivi.jpg', name: 'Loona Vivi'}
-//   { imgsrc: './images/Loona-KimLip.jpg', name: 'Loona KimLip'}
-//   { imgsrc: './images/Loona-JinSoul.jpg', name: 'Loona JinSoul'}
-//   { imgsrc: './images/Loona-Choerry.jpg', name: 'Loona Choerryn'}
-//   { imgsrc: './images/Loona-Yves.jpg', name: 'Loona Yves'}
-//   { imgsrc: './images/Loona-Chuu.jpg', name: 'Loona Chuu'}
-//   { imgsrc: './images/Loona-GoWon.jpg', name: 'Loona GoWon'}
-//   { imgsrc: './images/Loona-OliviaHye.jpg', name: 'Loona OliviaHye'}
-// ]
-
+const getImages = () => [
+  { imgSrc: './images/Loona-Heejin.jpg', name: 'Loona Heejin'},
+  { imgSrc: './images/Loona-Hyunjin.jpg', name: 'Loona Hyunjin'},
+  { imgSrc: './images/Loona-Haseul.jpg', name: 'Loona Haseul'},
+  { imgSrc: './images/Loona-Yeojin.jpg', name: 'Loona Yeojin'},
+  { imgSrc: './images/Loona-Vivi.jpg', name: 'Loona Vivi'},
+  { imgSrc: './images/Loona-KimLip.jpg', name: 'Loona KimLip'},
+  { imgSrc: './images/Loona-JinSoul.jpg', name: 'Loona JinSoul'},
+  { imgSrc: './images/Loona-Choerry.jpg', name: 'Loona Choerryn'},
+  { imgSrc: './images/Loona-Yves.jpg', name: 'Loona Yves'},
+  { imgSrc: './images/Loona-Chuu.jpg', name: 'Loona Chuu'},
+  { imgSrc: './images/Loona-GoWon.jpg', name: 'Loona GoWon'},
+  { imgSrc: './images/Loona-OliviaHye.jpg', name: 'Loona OliviaHye'},
+  { imgSrc: './images/Loona-Heejin.jpg', name: 'Loona Heejin'},
+  { imgSrc: './images/Loona-Hyunjin.jpg', name: 'Loona Hyunjin'},
+  { imgSrc: './images/Loona-Haseul.jpg', name: 'Loona Haseul'},
+  { imgSrc: './images/Loona-Yeojin.jpg', name: 'Loona Yeojin'},
+  { imgSrc: './images/Loona-Vivi.jpg', name: 'Loona Vivi'},
+  { imgSrc: './images/Loona-KimLip.jpg', name: 'Loona KimLip'},
+  { imgSrc: './images/Loona-JinSoul.jpg', name: 'Loona JinSoul'},
+  { imgSrc: './images/Loona-Choerry.jpg', name: 'Loona Choerryn'},
+  { imgSrc: './images/Loona-Yves.jpg', name: 'Loona Yves'},
+  { imgSrc: './images/Loona-Chuu.jpg', name: 'Loona Chuu'},
+  { imgSrc: './images/Loona-GoWon.jpg', name: 'Loona GoWon'},
+  { imgSrc: './images/Loona-OliviaHye.jpg', name: 'Loona OliviaHye'}
+]
 
 
 // Function to create the squares using a loop
