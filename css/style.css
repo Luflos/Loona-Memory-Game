@@ -31,7 +31,7 @@ body {
   background-color: purple;
   width: 100px;
   height: 100px;
-  margin: 5px;
+  margin: 5px;  
 }
 
 .container {
@@ -39,4 +39,6 @@ body {
   flex-wrap: wrap;
   width: 700px;
   height: 500px;
+  margin: auto;
+  position: relative;
 }
