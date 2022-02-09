@@ -1,9 +1,13 @@
 const gameSpace = document.querySelector(".container");
 const displayGuesses = document.querySelector("#guess");
-gameState = true;
+const resetButton = document.querySelector("#resetButton");
+const winMessage = document.querySelector("#winMessage");
+
 // Start gueesses at 0 and increment them as number of clicks go up
 let guesses = 0;
 displayGuesses.innerText = guesses;
+
+let correctGuesses = 0;
 
 // Create an array for all member's images 12 members and then repeat for 24 images
 const getImages = [
@@ -32,11 +36,13 @@ const getImages = [
   { imgs: "./images/Loona-GoWon.jpg", name: "Loona GoWon" },
   { imgs: "./images/Loona-OliviaHye.jpg", name: "Loona OliviaHye" },
 ];
-// Randomize the images
-getImages.sort(() => Math.random() - 0.5);
 
 // Function to create the cards using a loop
 let makeGameSpace = () => {
+  // Checking if there is a child element and if it exists, remove that child element
+  while (gameSpace.firstChild && !gameSpace.firstChild.remove());
+  // Randomize the images
+  getImages.sort(() => Math.random() - 0.5);
   for (let i = 0; i < getImages.length; i++) {
     let cards = document.createElement("img");
     cards.classList.add("card");
@@ -53,13 +59,12 @@ let makeGameSpace = () => {
 let clickedImageUrl = "";
 let clickedElement = null;
 let pause = false;
+
 // function to change the card
 let revealCard = (event) => {
   if (pause) {
     return;
   }
-
-  // console.log(event)
   const image = event.target;
   // url of the loona member
   const targetImageUrl = event.target.dataset.imgs;
@@ -71,10 +76,14 @@ let revealCard = (event) => {
   } else {
     if (clickedImageUrl === targetImageUrl) {
       // don't flip the images back
+      correctGuesses++;
+      console.log(correctGuesses);
       clickedImageUrl = "";
       clickedElement = null;
       guesses++;
       displayGuesses.innerText = guesses;
+      winCondition();
+      getFact(image.dataset.name);
     } else {
       // flip the images back to the logo
       guesses++;
@@ -86,17 +95,34 @@ let revealCard = (event) => {
         clickedImageUrl = "";
         clickedElement = null;
         pause = false;
-      }, 1500);
+      }, 1000);
     }
   }
 };
 
-// function winCondition () {
-//   for (let i = 0; i < getImages.length; i++) {
-//     if (24 =< getImages.length) {
-//       gameState = false
-//     }
-// }
+let winCondition = () => {
+  if (correctGuesses >= 12) winMessage.innerText = "You Win";
+};
+
+// Extra Goal
+let getFact = (name) => {
+  if (name === "Loona Heejin") {
+    alert("Hello");
+  } else if (name === "Loona Hyunjin") {
+    alert("Hello 2");
+  }
+};
+
+resetButton.addEventListener("click", function () {
+  winMessage.innerText = "";
+  guesses = 0;
+  displayGuesses.innerText = guesses;
+  correctGuesses = 0;
+  clickedImageUrl = "";
+  clickedElement = null;
+  pause = false;
+  makeGameSpace();
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   makeGameSpace();

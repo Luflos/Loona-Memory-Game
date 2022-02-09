@@ -1,24 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sora:wght@300&display=swap");
+
 body {
   background-color: black;
-  background-image: url("https://64.media.tumblr.com/73ca2d2bc1a485286d80bbf83ebe21a9/9d04eef358d053e0-de/s1280x1920/05055e9fe9883df7dda55c9d9ed11d55ea2c869c.jpg");
+  background-image: url("../images/Loona-Background.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-.half-screen {
+h1 {
+  font-family: "Dancing Script", cursive;
+}
+
+h2 {
+  font-family: "Sora", sans-serif;
+}
+
+/* .half-screen {
   height: 10vh;
-}
-
-.container-h2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.flex-right {
-  align-self: flex-end;
-}
+} */
 
 .flex-center {
   display: flex;
@@ -26,17 +26,32 @@ body {
   justify-content: center;
 }
 
-.card {
-  width: 110px;
-  height: 110px;
-  margin: 3px;
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 8rem);
+  grid-template-rows: repeat(4, 8rem);
+  grid-gap: 0.5rem;
 }
 
-.container {
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.instructions {
+  text-align: center;
+}
+
+.space-between {
   display: flex;
-  flex-wrap: wrap;
-  width: 700px;
-  height: 500px;
+  justify-content: space-evenly;
   margin: auto;
-  position: relative;
+  width: 95%;
+}
+
+#resetButton {
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }

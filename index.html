@@ -11,18 +11,24 @@
 
 <body>
   <h1 class='half-screen flex-center'>LOONA (이달의 소녀)</h1>
+  
+  <div class='space-between'>
+    <h2>Guesses: <span id='guess'></span>
+    </h2>
+    <h2 id="winMessage"></h2>
+  <button id='resetButton'>Restart</button>
 
-  <h2 class='guesses container-h2'>Guesses: <span id='guess'></span>
-    <button class='restart flex-right' onClick=" location.reload();">Restart</button>
-  </h2>
+</div>
 
   <div class="flex-center">
     <div class='container'></div>
   </div>
 
-  <h2 id="instructions" class='half-screen flex-center'>The rules of this game are simple. Click on a random card to reveal a Loona member. Try to match two copies of that member. Once you find all the members you win! </h2>
+    <h2 class='instructions'>The rules of this game are simple. Click on a random card to reveal a Loona member.
+    </h2>
+    <h2 class="instructions"> Try to match two copies of that member. Once you find all the members, you win!
+    </h2>
 
 </body>
 <script src="/js/script.js"></script>
-
 </html>
