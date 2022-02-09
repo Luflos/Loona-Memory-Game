@@ -16,9 +16,9 @@ h2 {
   font-family: "Sora", sans-serif;
 }
 
-/* .half-screen {
-  height: 10vh;
-} */
+.height-adjust {
+  height: 5vh;
+}
 
 .flex-center {
   display: flex;
@@ -36,6 +36,8 @@ h2 {
 .card {
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
 .instructions {
@@ -46,7 +48,7 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   margin: auto;
-  width: 95%;
+  width: 82%;
 }
 
 #resetButton {
@@ -54,4 +56,13 @@ h2 {
   cursor: pointer;
   overflow: hidden;
   outline: none;
+  background-color: Transparent;
+  font-family: "Sora", sans-serif;
+  font-size: 30px;
+  overflow: hidden;
+}
+
+h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: xx-large;
 }

@@ -2,11 +2,10 @@ const gameSpace = document.querySelector(".container");
 const displayGuesses = document.querySelector("#guess");
 const resetButton = document.querySelector("#resetButton");
 const winMessage = document.querySelector("#winMessage");
+const extraMessage = document.querySelector("#extra");
 
 // Start gueesses at 0 and increment them as number of clicks go up
 let guesses = 0;
-displayGuesses.innerText = guesses;
-
 let correctGuesses = 0;
 
 // Create an array for all member's images 12 members and then repeat for 24 images
@@ -100,21 +99,57 @@ let revealCard = (event) => {
   }
 };
 
+// Win Condition - Counter = 12 or if there are all matches print out a message
 let winCondition = () => {
   if (correctGuesses >= 12) winMessage.innerText = "You Win";
+  extraMessage.innerText = "Loona is ...";
 };
 
 // Extra Goal
 let getFact = (name) => {
   if (name === "Loona Heejin") {
-    alert("Hello");
+    extraMessage.innerText =
+      "HeeJin was the 1st member revealed. Her represetative animal is a Rabbit and her color is Vivid Pink";
   } else if (name === "Loona Hyunjin") {
-    alert("Hello 2");
+    extraMessage.innerText =
+      "HyunJin was the 2nd member revealed. Her represetative animal is a Cat and her color is Yellow";
+  } else if (name === "Loona Haseul") {
+    extraMessage.innerText =
+      "HaSeul was the 3rd member revealed. Her represetative animal is a White Bird and her color is Green";
+  } else if (name === "Loona Yeojin") {
+    extraMessage.innerText =
+      "YeoJin was the 4th member revealed. Her represetative animal is a Frog and her color is Orange";
+  } else if (name === "Loona Vivi") {
+    extraMessage.innerText =
+      "ViVi was the 5th member revealed. Her represetative animal is a Deer and her color is Light Pink";
+  } else if (name === "Loona KimLip") {
+    extraMessage.innerText =
+      "KimLip was the 6th member revealed. Her represetative animal is an Owl and her color is Red";
+  } else if (name === "Loona JinSoul") {
+    extraMessage.innerText =
+      "JinSoul was the 7th member revealed. Her represetative animal is a Blue Betta and her color is Blue";
+  } else if (name === "Loona Choerry") {
+    extraMessage.innerText =
+      "Choerry was the 8th member revealed. Her represetative animal is a Fruit Bat and her color is Purple";
+  } else if (name === "Loona Yves") {
+    extraMessage.innerText =
+      "Yves was the 9th member revealed. Her represetative animal is a Swan and her color is Burgundy";
+  } else if (name === "Loona Chuu") {
+    extraMessage.innerText =
+      "Chuu was the 10th member revealed. Her represetative animal is a Penguin and her color is Peach";
+  } else if (name === "Loona GoWon") {
+    extraMessage.innerText =
+      "GoWon was the 11th member revealed. Her represetative animal is an Emperor Butterfly and her color is Eden Green";
+  } else if (name === "Loona OliviaHye") {
+    extraMessage.innerText =
+      "Olivia Hye was the 12th & final member revealed. Her represetative animal is a Wolf and her color is Silver";
   }
 };
 
+// Reset button
 resetButton.addEventListener("click", function () {
   winMessage.innerText = "";
+  extraMessage.innerText = "";
   guesses = 0;
   displayGuesses.innerText = guesses;
   correctGuesses = 0;
