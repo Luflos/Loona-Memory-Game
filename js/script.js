@@ -76,7 +76,7 @@ let revealCard = (event) => {
     if (clickedImageUrl === targetImageUrl) {
       // don't flip the images back
       correctGuesses++;
-      console.log(correctGuesses);
+      // console.log(correctGuesses);
       clickedImageUrl = "";
       clickedElement = null;
       guesses++;
