@@ -101,48 +101,65 @@ let revealCard = (event) => {
 
 // Win Condition - Counter = 12 or if there are all matches print out a message
 let winCondition = () => {
-  if (correctGuesses >= 12) winMessage.innerText = "You Win";
-  extraMessage.innerText = "Loona is ...";
+  if (correctGuesses >= 12) {
+  winMessage.innerText = "You Win";
+  setTimeout(() => {
+    extraMessage.style.color= 'black';
+    extraMessage.innerText = "LOONA is Life";
+  }, 4000)
+}
 };
 
 // Extra Goal
 let getFact = (name) => {
   if (name === "Loona Heejin") {
+    extraMessage.style.color= '#F50B94';
     extraMessage.innerText =
-      "HeeJin was the 1st member revealed. Her represetative animal is a Rabbit and her color is Vivid Pink";
+      "HeeJin was the 1st member revealed. Her represetative animal is a Rabbit🐇 and her color is Vivid Pink";
   } else if (name === "Loona Hyunjin") {
+    extraMessage.style.color= '#FCCA28';
     extraMessage.innerText =
-      "HyunJin was the 2nd member revealed. Her represetative animal is a Cat and her color is Yellow";
+      "HyunJin was the 2nd member revealed. Her represetative animal is a Cat🐈 and her color is Yellow";
   } else if (name === "Loona Haseul") {
+    extraMessage.style.color= '#08A953';
     extraMessage.innerText =
-      "HaSeul was the 3rd member revealed. Her represetative animal is a White Bird and her color is Green";
+      "HaSeul was the 3rd member revealed. Her represetative animal is a White Bird🕊️ and her color is Green";
   } else if (name === "Loona Yeojin") {
+    extraMessage.style.color= '#F5712A';
     extraMessage.innerText =
-      "YeoJin was the 4th member revealed. Her represetative animal is a Frog and her color is Orange";
+      "YeoJin was the 4th member revealed. Her represetative animal is a Frog🐸 and her color is Orange";
   } else if (name === "Loona Vivi") {
+    extraMessage.style.color= '#F59EAF';
     extraMessage.innerText =
-      "ViVi was the 5th member revealed. Her represetative animal is a Deer and her color is Light Pink";
+      "ViVi was the 5th member revealed. Her represetative animal is a Deer🦌 and her color is Light Pink";
   } else if (name === "Loona KimLip") {
+    extraMessage.style.color= '#EE1B3E';
     extraMessage.innerText =
-      "KimLip was the 6th member revealed. Her represetative animal is an Owl and her color is Red";
+      "KimLip was the 6th member revealed. Her represetative animal is an Owl🦉 and her color is Red";
   } else if (name === "Loona JinSoul") {
+    extraMessage.style.color= '#1E76B8';
     extraMessage.innerText =
-      "JinSoul was the 7th member revealed. Her represetative animal is a Blue Betta and her color is Blue";
+      "JinSoul was the 7th member revealed. Her represetative animal is a Blue Betta🐟 and her color is Blue";
   } else if (name === "Loona Choerry") {
+    extraMessage.style.color= '#7C2E87';
     extraMessage.innerText =
-      "Choerry was the 8th member revealed. Her represetative animal is a Fruit Bat and her color is Purple";
+      "Choerry was the 8th member revealed. Her represetative animal is a Fruit Bat🦇 and her color is Purple";
   } else if (name === "Loona Yves") {
+    extraMessage.style.color= '#7A0434';
     extraMessage.innerText =
-      "Yves was the 9th member revealed. Her represetative animal is a Swan and her color is Burgundy";
+      "Yves was the 9th member revealed. Her represetative animal is a Swan🦢 and her color is Burgundy";
   } else if (name === "Loona Chuu") {
+    extraMessage.style.color= '#F98F81';
     extraMessage.innerText =
-      "Chuu was the 10th member revealed. Her represetative animal is a Penguin and her color is Peach";
+      "Chuu was the 10th member revealed. Her represetative animal is a Penguin🐧 and her color is Peach";
   } else if (name === "Loona GoWon") {
+    extraMessage.style.color= '#37BA9B';
     extraMessage.innerText =
-      "GoWon was the 11th member revealed. Her represetative animal is an Emperor Butterfly and her color is Eden Green";
+      "GoWon was the 11th member revealed. Her represetative animal is an Emperor Butterfly🦋 and her color is Eden Green";
   } else if (name === "Loona OliviaHye") {
+    extraMessage.style.color= '#C0C2C2';
     extraMessage.innerText =
-      "Olivia Hye was the 12th & final member revealed. Her represetative animal is a Wolf and her color is Silver";
+      "Olivia Hye was the 12th & final member revealed. Her represetative animal is a Wolf🐺 and her color is Silver";
   }
 };
 
