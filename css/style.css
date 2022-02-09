@@ -7,11 +7,10 @@ body {
 }
 
 .half-screen {
-  background-color: rgb(43, 233, 18);
   height: 10vh;
 }
 
-.container-h2{
+.container-h2 {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -28,10 +27,9 @@ body {
 }
 
 .card {
-  background-color: purple;
   width: 110px;
   height: 110px;
-  margin: 3px;  
+  margin: 3px;
 }
 
 .container {
