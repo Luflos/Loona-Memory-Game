@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300&family=Oswald&family=Sora:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300&family=Oswald&family=Sora:wght@300&display=swap");
 
 body {
-  background-color: black;
+  background-color: #c4e6f2;
   background-image: url("../images/Loona-Background2.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -46,7 +46,6 @@ h2 {
 .instructions {
   text-align: center;
   font-family: "Sora", sans-serif;
-
 }
 
 .space-between {
@@ -68,6 +67,21 @@ h2 {
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: xx-large;
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+  
+}
+
+#musicButton {
+  font-size: 20px;
+  position: absolute;
+  padding: 15px;
+  border: none;
+  background-color: Transparent;
+  opacity: 0.8;
+  cursor: pointer;
+  font-family: "Sora", sans-serif;
+  top: 4.5%;
+  width: 101%;
+  text-align: center;
 }
