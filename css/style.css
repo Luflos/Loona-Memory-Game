@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@800&family=Oswald&family=Sora:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@800&family=Oswald&family=Sora:wght@400&display=swap");
 
 body {
   background-color: #c4e6f2;
@@ -42,8 +42,6 @@ h2 {
 .instructions {
   text-align: center;
   font-family: "Sora", sans-serif;
-  /* background-color: rgba(0,0,0,0.1);
-  color: white; */
 }
 
 .space-between {
@@ -56,17 +54,14 @@ h2 {
 #resetButton {
   border: none;
   cursor: pointer;
-  outline: none;
   background-color: Transparent;
   font-family: "Sora", sans-serif;
   font-size: 30px;
-  overflow: hidden;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
   font-size: x-large;
-  
 }
 
 #musicButton {

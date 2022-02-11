@@ -2,11 +2,11 @@
 
 
 ## Welcome to LOONA
-You might be asking yourself, what is LOONA? LOONA is you, it's me but it's especially the 12 members of a Korean POP group. I've been a fan of LOONA for several years now and I wanted to make a game that was themed around them. I decided a memory matching game would be fun and challenging. 12 members = 24 squares. The goal of the game is to match all 12 members in the least amount of gueses possible. The person with the least amount of gusses wins! Also remember to STAN LOONA! 
+You might be asking yourself, what is LOONA? LOONA is you, it's me but it's especially the 12 members of a Korean POP group. I've been a fan of LOONA for several years now and I wanted to make a game that was themed around them. I decided a memory matching game would be fun and challenging. 12 members = 24 squares. The goal of the game is to match all 12 members in the least amount of guesses possible. The person with the least amount of guesses wins! Also remember to STAN LOONA! 
 
 ### Tech Being Used
 * HTML/CSS/JavaScript
-* Using grid and flex
+* Grid and Flex to style
 
 ### Rough Sketch
 ![Sketch](./images/MemoryGameSketch.jpg)
@@ -35,8 +35,9 @@ Updated Board design
 * A timer to score instead of # of guesses and have timer stop when game is over []
 
 ## Resources
-* Used this page to find how to properly play and pause music. <a href="https://forum.freecodecamp.org/t/how-to-play-mp3-in-the-background-music-automatically/308554">Click</a>
 * I do not own these pictures and music. All were used for educational purposes.
+* Used this page to find how to properly play and pause music. <a href="https://forum.freecodecamp.org/t/how-to-play-mp3-in-the-background-music-automatically/308554">Click</a>
+* Used icons from https://fontawesome.com/
 
 ## Code highlights
 * A music button with switching icons
@@ -70,4 +71,10 @@ let winCondition = () => {
     }, 3000);
   }
 };
+```
+* My secret weapon
+```
+.hide {
+  display: none;
+}
 ```
