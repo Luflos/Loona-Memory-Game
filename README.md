@@ -30,4 +30,5 @@ You might be asking yourself, what is LOONA? LOONA is you, it's me but it's espe
 * A timer to score instead of # of guesses and have timer stop when game is over.
 
 ## Resources
-* Used this page to find how to properly play and pause music. <a href="https://forum.freecodecamp.org/t/how-to-play-mp3-in-the-background-music-automatically/308554l">Click</a>
+* Used this page to find how to properly play and pause music. <a href="https://forum.freecodecamp.org/t/how-to-play-mp3-in-the-background-music-automatically/308554">Click</a>
+* I do not own these pictures and music. All were used for educational purposes.

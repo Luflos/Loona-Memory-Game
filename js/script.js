@@ -3,7 +3,7 @@ const displayGuesses = document.querySelector("#guess");
 const resetButton = document.querySelector("#resetButton");
 const winMessage = document.querySelector("#winMessage");
 const extraMessage = document.querySelector("#extra");
-const instructions = document.querySelector('.instructions')
+const instructions = document.querySelector(".instructions");
 
 // Start gueesses at 0 and increment them as number of clicks go up
 let guesses = 0;
@@ -67,6 +67,10 @@ let revealCard = (event) => {
     return;
   }
   const image = event.target;
+  // if the source of the image does not include the string Logo prevent any actions from happening
+  if (!image.src.includes('Logo')) {
+    return;
+  }
   // url of the loona member
   const targetImageUrl = event.target.dataset.imgs;
   image.setAttribute("src", targetImageUrl);
@@ -85,6 +89,7 @@ let revealCard = (event) => {
       displayGuesses.innerText = guesses;
       winCondition();
       getFact(image.dataset.name);
+      instructions.classList.add("hide");
     } else {
       // flip the images back to the logo
       guesses++;
@@ -109,7 +114,7 @@ let winCondition = () => {
       // document.body.style.backgroundImage = "url("../images/LOONAVERSE.jpg")";
       extraMessage.style.color = "black";
       extraMessage.innerText = "Welcome to the LOONAVERSE";
-    }, 4000);
+    }, 3000);
   }
 };
 
@@ -176,6 +181,7 @@ resetButton.addEventListener("click", function () {
   clickedImageUrl = "";
   clickedElement = null;
   pause = false;
+  instructions.classList.remove("hide");
   makeGameSpace();
 });
 
@@ -192,6 +198,14 @@ musicButton.addEventListener("click", () => {
   }
 });
 
+// Timer
+// let seconds = 0
+// let minutes =  0
+// let timer = document.querySelector('#timer')
+// let interval;
+
 document.addEventListener("DOMContentLoaded", () => {
   makeGameSpace();
 });
+
+// create a hide toggle class for the instructions

@@ -12,12 +12,13 @@
 <body>
   <h1 class='flex-center'>LOONA (이달의 소녀) Memory</h1>
   <audio src="./music/Butterfly.mp3"></audio>
-  <button id="musicButton"> Music
-  </button>
+  <div class='flex-center'>
+    <button id="musicButton">Music</button>
+  </div>
 
   <div class='space-between'>
-    <h2>Guesses: <span id='guess'></span>
-    </h2>
+    <h2>Guesses: <span id='guess'></span></h2>
+    <h2 id ='timer'></h2>
     <h2 id="winMessage"></h2>
     <button id='resetButton'>Restart</button>
   </div>
@@ -26,12 +27,14 @@
     <div class='container'></div>
   </div>
 
-  <h3 class='flex-center height-adjust' id="extra"></h3>
+  <div class='extra-container'>
+    <h3 id="extra"></h3>
+  </div>
 
   <h2 class='instructions'>The rules of this game are simple. Click on a random card to reveal a Loona member.
     <br> Try to match two copies of that member. Once you find all the members, you win!
+    <br> You can click on "Music" up top to play one of Loona's songs.
   </h2>
-
 
 </body>
 <script src="./js/script.js"></script>

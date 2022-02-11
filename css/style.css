@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300&family=Oswald&family=Sora:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@800&family=Oswald&family=Sora:wght@300&display=swap');
 
 body {
   background-color: #c4e6f2;
@@ -16,10 +16,6 @@ h1 {
 
 h2 {
   font-family: "Sora", sans-serif;
-}
-
-.height-adjust {
-  height: 5vh;
 }
 
 .flex-center {
@@ -58,7 +54,6 @@ h2 {
 #resetButton {
   border: none;
   cursor: pointer;
-  overflow: hidden;
   outline: none;
   background-color: Transparent;
   font-family: "Sora", sans-serif;
@@ -81,7 +76,15 @@ h3 {
   opacity: 0.8;
   cursor: pointer;
   font-family: "Sora", sans-serif;
-  top: 4.5%;
-  width: 101%;
+}
+
+.extra-container {
+  margin: auto;
+  max-width: 495px;
+  padding: 9px;
   text-align: center;
+}
+
+.hide {
+  display: none;
 }
