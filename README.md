@@ -2,7 +2,7 @@
 
 
 ## Welcome to LOONA
-You might be asking yourself, what is LOONA? LOONA is you, it's me but it's especially the 12 members of a Korean POP group. I've been a fan of LOONA for several years now and I wanted to make a game that was themed around them. I decided a memory matching game would be fun and challenging. 12 members = 24 squares. The goal of the game is to match all 12 members in the least amount of guesses possible. The person with the least amount of guesses wins! Also remember to STAN LOONA! 
+You might be asking yourself, what is LOONA? LOONA is you, it's me but it's especially the 12 members of a Korean POP group. I've been a fan of LOONA for several years now and I wanted to make a game that was themed around them. I decided a memory matching game would be fun and challenging. 12 members = 24 squares. The goal of the game is to match all 12 members in the least amount of guesses possible. The person with the least amount of guesses wins! Also remember to STAN LOONA! <a href="https://www.youtube.com/c/loonatheworld/featured">LOONA's YouTube page</a> I would recommend watching STAR and Butterfly MV!
 
 ### Tech Being Used
 * HTML/CSS/JavaScript
@@ -16,6 +16,9 @@ Beautiful right? Please excuse my drawing...
 ### Game Board
 ![Game Board](./images/Loona-Memory-Game.jpg)
 Updated Board design
+
+### Link to game
+<a href="https://luflos.github.io/Loona-Memory-Game/">LOONA Memory Game</a>
 
 
 ## MVP
